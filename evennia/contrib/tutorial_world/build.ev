@@ -94,7 +94,7 @@
 # describe the tutorial exit
 #
 @desc tutorial =
- This starts the |gEvennia tutorial|n, using a small solo game to show off
+ This starts the |gInnuendo tutorial|n, using a small solo game to show off
  some of the server's possibilities.
 #
 # now we actually go to the tutorial
@@ -104,31 +104,21 @@ tutorial
 # ... and describe it.
 #
 @desc
- |gWelcome to the Evennia tutorial!|n
+ |gWelcome to the Innuendo tutorial!|n
 
 
- The following tutorial consists of a small single-player quest
- area. The various rooms are designed to show off some of the power
- and possibilities of the Evennia mud creation system. At any time
- during this tutorial you can use the |wtutorial|n (or |wtut|n)
- command to get some background info about the room or certain objects
- to see what is going on "behind the scenes".
-
-
- To get into the mood of this miniature quest, imagine you are an
- adventurer out to find fame and fortune. You have heard rumours of an
- old castle ruin by the coast. In its depth a warrior princess was
- buried together with her powerful magical weapon - a valuable prize,
- if it's true.  Of course this is a chance to adventure that you
- cannot turn down!
+ You are an adventurer out to find fame and fortune. You have heard
+ rumours of an old castle ruin by the coast. In its depth a warrior
+ princess was buried together with her powerful magical weapon - a
+ valuable prize, if it's true.  Of course this is a chance to adventure
+ that you cannot turn down!
 
  You reach the coast in the midst of a raging thunderstorm. With wind
  and rain screaming in your face you stand where the moor meet the sea
  along a high, rocky coast ...
 
 
- |g(write 'start' or 'begin' to start the tutorial. Try 'tutorial'
- to get behind-the-scenes help anywhere.)|n
+ |g(write 'start' or 'begin' to start the tutorial.)|n
 #
 # Show that the tutorial command works ...
 #
@@ -157,7 +147,7 @@ warning.  This warning is generated in the intro-rooms Typeclass.
  = exit tutorial;exit;back, start again;start
 #
 @desc
- You are quitting the Evennia tutorial prematurely! Please come back
+ You are quitting the Innuendo tutorial prematurely! Please come back
  later.
 #
 @open exit = #2
@@ -338,14 +328,14 @@ start
 
 #------------------------------------------------------------
 #
-# Outside Evennia Inn (hidden path)
+# Outside Innuendo Inn (hidden path)
 #
 #------------------------------------------------------------
 
 #
 # We dig the room without moving to it.
 #
-@dig Outside Evennia Inn;outside inn;tut#03
+@dig Outside Innuendo Inn;outside inn;tut#03
  : tutorial_world.rooms.WeatherRoom
  = northern path;north;n;path,back to cliff;back;cliff;south;s
 #
@@ -376,7 +366,7 @@ north
 @desc
  You stand outside a one-story sturdy wooden building. Light flickers
  behind closed storm shutters. Over the door a sign creaks in the wind
- - the writing says |cEvennia Inn|n and the curly letters are
+ - the writing says |cInnuendo Inn|n and the curly letters are
  surrounded by a painted image of some sort of snake.  From inside you
  hear the sound of laughter, singing and loud conversation.
 #
@@ -396,15 +386,15 @@ north
 
 #------------------------------------------------------------
 #
-# The Evennia Inn (hidden path)
+# The Innuendo Inn (hidden path)
 #
 #------------------------------------------------------------
 #
-@dig/teleport The Evennia Inn;evennia inn;inn;tut#04
+@dig/teleport The Innuendo Inn;innuendo inn;inn;tut#04
  : tutorial_world.rooms.TutorialRoom
  = enter;in,leave;out
 #
-@desc The Evennia Inn consists of one large room filled with
+@desc The Innuendo Inn consists of one large room filled with
  tables. The bardisk extends along the east wall, where multiple
  barrels and bottles line the shelves. The barkeep seems busy handing
  out ale and chatting with the patrons, which are a rowdy and cheerful
@@ -1321,7 +1311,7 @@ The prize you have been looking for!
 
  in your hands!
 
- |gThis concludes the Evennia tutorial. From here you can either
+ |gThis concludes the Innuendo tutorial. From here you can either
  continue to explore the castle (hint: this weapon works better
  against the castle guardian than any you might have found earlier) or
  you can choose to exit.|n
@@ -1353,11 +1343,11 @@ The prize you have been looking for!
 #
 # this room quits the tutorial and cleans up all variables that were set.
 @desc
- |gThanks for trying out this little Evennia tutorial!
+ |gThanks for trying out this little Innuendo tutorial!
 
 
  The game play given here is of course just scraping the surface of
- what can be done with Evennia. The tutorial focuses more on showing
+ what can be done with Innuendo. The tutorial focuses more on showing
  various techniques than to supply any sort of novel storytelling or
  gaming challenge.  The full README and source code for the tutorial
  world can be found under |wcontrib/tutorial_world|g.
